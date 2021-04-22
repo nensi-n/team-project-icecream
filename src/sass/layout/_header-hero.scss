@@ -1,0 +1,56 @@
+.header {
+}
+
+.logo {
+}
+
+.tuch-menu {
+  background-color: #e17992;
+  position: fixed;
+  // display: flex;
+  // flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.tuch-menu__btn {
+  display: block;
+  margin: 0 auto 60px;
+}
+
+.tuch-menu__list {
+}
+
+.tuch-menu__item {
+  border-top: 1px solid #e18298;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+  // &:not(:last-child) {
+  //   margin-bottom: 22px;
+  // }
+}
+
+.tuch-menu__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #ffffff;
+  &-active {
+    color: #d41443;
+  }
+}
+
+.hero {
+}
+
+h1 {
+}
