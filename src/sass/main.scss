@@ -5,3 +5,21 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/logo';
+@import './components/modal-btn';
+
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/contacts';
+@import './layout/customer-reviews';
+@import './layout/footer';
+@import './layout/gallery';
+@import './layout/header-hero';
+@import './layout/products';
+
+@import './utils/mixins';
+@import './utils/variables';
