@@ -19,4 +19,12 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  @media screen and(max-width: 767px) {
+    .header & {
+      width: 100%;
+      margin: 0 0;
+      justify-content: space-between;
+    }
+  }
 }
