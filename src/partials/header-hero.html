@@ -2,21 +2,48 @@
     <header class="header">
         <div class="container">
         
-            <a href="./index.html" class="logo link">ICECREAM</a>
-
+            <a href="./index.html" class="logo link">
+            <picture>
+                <source srcset="./image/hero-header/logo-desktop.webp 1x, ./image/hero-header/logo-desktop2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./image/hero-header/logo-desktop.png 1x, ./image/hero-header/logo-desktop2x.png 2x"
+                    media="(min-width: 1200px)">
+                <source srcset="./image/hero-header/logo-tablet.webp 1x, ./image/hero-header/logo-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                <source srcset="./image/hero-header/logo-tablet.png 1x, ./image/hero-header/logo-tablet@2x.png 2x"
+                    media="(min-width: 768px)">
+                <source srcset="./image/hero-header/logo-mobile.webp 1x, ./image/hero-header/logo-mobile@2x.webp 2x"
+                    media="(max-width: 768px)" type="image/webp">
+                <source srcset="./image/hero-header/logo-mobile.png 1x, ./image/hero-header/logo-mobile@2x.png 2x"
+                    media="(max-width: 768px)">
+                <img class="team-member-card__image" src="./image/hero-header/logo-mobile.png"
+                    alt="logo">
+            </picture>
+            </a>
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon" height="12" width="20">
+                    <use href="./sprite/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <section class="hero">
         <div class="container">
-            <h1>ice cream made with passion</h1>
-            <div class="hero__btn-container">
-                <a class="btn btn-colored link" href="#">Products</a>
-                <a class="btn link" href="#">How it’s made?</a>
-            </div>
+            <h1 class="main-title">ice cream made with <span class="main-title--colored">passion</span></h1>
+            <ul class="list hero__btn-list">
+                <li class="hero__btn-item"><a class="btn btn-colored link" href="#">Products</a></li>
+                <li class="hero__btn-item"><a class="btn link" href="#">How it’s made?</a></li>
+            </ul>
             <img src="" alt="мороженое в вафельном рожке">
         </div>       
     </section>
     <div class="tuch-menu" data-menu>
+        <button type="button" class="close-btn" data-menu-close>
+<svg class="close-icon" height="14" width="14">
+    <use href="./sprite/sprite.svg#icon-close"></use>
+</svg>
+
+        </button>
         <div class="container">
         <button class="btn" type="button">Buy now</button>
         </div>
