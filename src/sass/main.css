@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  font-family: var(--main-font), var(--secondary-font);
+  /*color: var(--main-color);*/
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.btn {
+  display: block;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #d41443;
+  font-family: inherit;
+  border: 0;
+  border-radius: 22px;
+  min-width: 100px;
+  padding: 12px 37px;
+  -webkit-transition: background-color 250ms var(--time-function);
+  transition: background-color 250ms var(--time-function);
+}
+
+.btn:hover, .btn:focus {
+  background-color: #ecebeb;
+  cursor: pointer;
+}
+
+.btn-colored {
+  background-color: #d41342;
+  color: #ffffff;
+}
+
+.btn-colored:hover, .btn-colored:focus {
+  background-color: #c7133e;
+  cursor: pointer;
+}
+
+.modal-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  border-radius: 22px;
+  color: #d41443;
+  background: #ffffff;
+}
+
+.modal-btn:hover, .modal-btn:focus {
+  color: #ffffff;
+  background: #d41443;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-btn:hover, .modal-btn:focus {
+    background: #ecebeb;
+  }
+}
+
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', cursive;
+  --color-pink-light: #FFF5F6;
+  --color-pink-darker-pink: #FFB8CA;
+  /*darker pink  для бекграунда хиро b для заголовков типа 100% natural*/
+  --color-white: #FFFFFF;
+  --color-pink-accent: #D41443;
+  --color-btn-hover: #ECEBEB;
+  /*для остальных кнопок ховер=акцентный*/
+  --color-yellow: #F0D1A5;
+  --color-green: #C2E297;
+  /* дополнительный цвет для карточек продуктов + в контактах используется*/
+}
+/*# sourceMappingURL=main.css.map */
