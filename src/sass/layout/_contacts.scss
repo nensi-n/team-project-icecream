@@ -7,13 +7,11 @@
 }
 
 .contact-container__heading {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 22px;
+  @include font(500, 12px, 22px);
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: #ffffff;
 }
