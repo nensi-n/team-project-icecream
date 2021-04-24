@@ -5,10 +5,11 @@
 
 @import './base/common';
 @import './base/container';
-
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/visually-hidden';
 @import './components/logo';
 @import './components/modal-btn';
-
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/contacts';
@@ -17,6 +18,3 @@
 @import './layout/gallery';
 @import './layout/header-hero';
 @import './layout/products';
-
-@import './utils/mixins';
-@import './utils/variables';
