@@ -1,7 +1,7 @@
 
 <header class="header">
     <div class="container">
-        <nav class="menu">
+
             <a href="./index.html" class="logo link">
             <picture>
                 <source srcset="./image/hero-header/logo-desktop.webp 1x, ./image/hero-header/logo-desktop2x.webp 2x"
@@ -20,6 +20,24 @@
                     alt="logo">
             </picture>
             </a>
+        <nav class="menu">
+            <ul class="navigation-list list">
+                <li class="navigation-list__item">
+                    <a class="active-navigation-link navigation-link link" href="./index.html">Home</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-link link" href="#advantages">About us</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-link link" href="#about">How it’s made?</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-link link" href="#products">Our products</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a class="navigation-link link" href="#contacts">Contact</a>
+                </li>
+            </ul>
         </nav>
         <div class="header__btn-wrapper">
         <button type="button" class="burger-btn" data-menu-button>
@@ -78,7 +96,11 @@
         <p class="hero-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         </p>
-
+        <span class="hero-arrow__circe">
+            <svg class="hero-arrow__arrow" width="5px" height="5px" >
+                <use href="./sprite/sprite.svg#icon-arrow-forward"></use>
+            </svg>
+        </span>
         <ul class="hero-counter__list list">
             <li class="hero-counter__item">
                                   <div class="hero-counter__wrapper">
@@ -98,10 +120,6 @@
                 
             </li>
         </ul>
-        
-
-        
-
         <h1 class="main-title">ice cream made with <span class="main-title--colored">passion</span></h1>
         <ul class="list hero__btn-list">
             <li class="hero__btn-item"><a class="btn btn-colored link" href="#">Products</a></li>
