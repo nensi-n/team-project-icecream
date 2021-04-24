@@ -84,9 +84,11 @@
 
 .icecream-card_btn {
     margin: 0 auto;
-    fill: thistle;
+    fill: var(--color-pink-accent);
+    padding: 3px;
+    min-width: unset;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
 }
-
-
-/*<svg class="socials__icon" width="20" height="20">
-<use href="./images/sprite.svg#icon-instagram"></use></svg>*/
