@@ -1,0 +1,13 @@
+.footer {
+  &__container-main {
+    padding-top: 57px;
+    padding-bottom: 10px;
+  }
+
+  &__main-desc {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    color: var();
+    @include font($fw: 400, $fs: 18px, $lh: 21px);
+  }
+}
