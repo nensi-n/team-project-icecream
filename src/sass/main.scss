@@ -1,7 +1,5 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+@import './utils/mixins';
+@import './utils/variables';
 
 @import './base/common';
 @import './base/container';
@@ -17,6 +15,3 @@
 @import './layout/gallery';
 @import './layout/header-hero';
 @import './layout/products';
-
-@import './utils/mixins';
-@import './utils/variables';
