@@ -28,10 +28,12 @@
 
     @media screen and(min-width: 768px) {
       @include font($fw: 400, $fs: 26px, $lh: 30px);
+      max-width: 340px;
     }
 
     @media screen and(min-width: 1200px) {
       @include font($fw: 400, $fs: 30px, $lh: 34px);
+      max-width: 472px;
     }
   }
 
@@ -47,10 +49,13 @@
     @media screen and(min-width: 768px) {
       @include font($fw: 400, $fs: 48px, $lh: 55px);
       letter-spacing: 0.06em;
+      max-width: 340px;
+      margin-bottom: unset;
     }
 
     @media screen and(min-width: 1200px) {
       @include font($fw: 400, $fs: 58px, $lh: 66px);
+      max-width: 477px;
     }
   }
 
