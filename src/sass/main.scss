@@ -1,16 +1,12 @@
 @import './utils/mixins';
 @import './utils/variables';
-@import './utils/visually-hidden'
-
+@import './utils/visually-hidden';
 @import './base/common';
 @import './base/container';
-
 @import './components/logo';
 @import './components/modal-btn';
 @import './components/header-section';
 @import './components/sub-header-section';
-
-
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/contacts';
