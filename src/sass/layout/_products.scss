@@ -1,0 +1,57 @@
+/*  @include bordered(tomato);*/
+
+.sub-header-section {
+    padding-bottom: 15px;
+}
+
+.products_header {
+    padding-bottom: 30px;
+}
+
+.products_img {
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.icecream-card_header {
+    font-family: Titan One;
+    font-size: 20px;
+    @include font(500, 20px, 23px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.icecream-card_header::after {
+    content: ". . .";
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.icecream-card_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.icecream-card {
+    background-color: var(--color-pink-darker-pink);
+}
+
+.icecream-card:not(:last-child) {
+    margin-bottom: 20px;
+}
