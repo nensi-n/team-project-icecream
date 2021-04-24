@@ -1,13 +1,54 @@
 .footer {
+  background-color: var(--color-pink-light);
+
   &__container-main {
     padding-top: 57px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+  }
+
+  &__container-second {
+    border-bottom: 1px solid var(--color-gray-border);
+    padding-bottom: 43px;
+    margin-bottom: 22px;
   }
 
   &__main-desc {
     font-family: var(--secondary-font);
     text-transform: uppercase;
-    color: var();
+    color: var(--color-pink-dark);
     @include font($fw: 400, $fs: 18px, $lh: 21px);
+    letter-spacing: 0.04em;
+    margin-bottom: 17px;
+    max-width: 232px;
+  }
+
+  &__second-desc {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    color: var(--color-pink-accent);
+    @include font($fw: 400, $fs: 34px, $lh: 39px);
+    letter-spacing: 0.04em;
+    margin-bottom: 43px;
+    max-width: 200 px;
+  }
+
+  &__list-icons-item {
+    display: flex;
+  }
+
+  &__list-icons-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &__contact-desc {
+    color: var(--color-black);
+    @include font($fw: 700, $fs: 12px, $lh: 22px);
+  }
+
+  &__copyright {
+    color: var(--color-subtext);
+    @include font($fw: 700, $fs: 14px, $lh: 21px);
+    max-width: 150px;
+    margin: 0 auto;
   }
 }
