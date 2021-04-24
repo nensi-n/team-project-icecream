@@ -3,11 +3,11 @@
  * Все паршалы подключаются сюда.
  */
 
-@import './base/common';
-@import './base/container';
 @import './utils/mixins';
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './base/common';
+@import './base/container';
 @import './components/logo';
 @import './components/modal-btn';
 @import './layout/about';
