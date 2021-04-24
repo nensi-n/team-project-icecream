@@ -11,6 +11,11 @@
 .products_img {
     margin: 0 auto;
     padding-bottom: 20px;
+    transform: translateY(150px);
+    /* position: absolute;
+    bottom: 300px;
+    left: 15px;
+    right: 15px;*/
 }
 
 .icecream-card_header {
@@ -42,16 +47,46 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-white);
-    padding-left: 40px;
-    padding-right: 40px;
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
 .icecream-card {
+    border-radius: 24px;
+    position: relative;
+}
+
+.icecream-card--wrap {
+    border-radius: 24px;
+    padding: 40px;
+    padding-top: 161px;
+}
+
+.icecream-card--pink {
     background-color: var(--color-pink-darker-pink);
 }
 
-.icecream-card:not(:last-child) {
-    margin-bottom: 20px;
+.icecream-card--brown {
+    background-color: var(--color-yellow);
 }
+
+.icecream-card--green {
+    background-color: var(--color-green);
+}
+
+.icecream-card:not(:last-child) {
+    margin-bottom: -135px;
+}
+
+.icecream-card:first-child {
+    margin-top: -135px;
+}
+
+.icecream-card_btn {
+    margin: 0 auto;
+    fill: thistle;
+}
+
+
+/*<svg class="socials__icon" width="20" height="20">
+<use href="./images/sprite.svg#icon-instagram"></use></svg>*/

@@ -1,9 +1,9 @@
-<section class="products">
+<section id="Products" class="products">
     <div class="container">
         <p class="sub-header-section">100% natural</p>
         <h2 class="products_header header-section">Products</h2>
         <ul class="products_list list">
-            <li class="products_item icecream-card">
+            <li class="products_item icecream-card ">
                 <picture>
                     <source srcset=" ./image/product/cream-desktop.png 1x, ./image/product/cream-desktop@2x.png 2x " media=" (min-width:1200px)">
                     <source srcset=" ./image/product/cream-tablet.png 1x, ./image/product/cream-tablet@2x.png 2x" media="(min-width:768px)">
@@ -13,9 +13,17 @@
                     <source srcset="./image/product/cream-mobile.webp 1x, ./image/product/cream-mobile@2x.webp 2x" type="image/webp" media=" (min-width:320px)">
                     <img class="products_img" src="./image/product/cream-mobile.png " alt="pink-colored icecream ">
                 </picture>
-                <h3 class="icecream-card_header">ice cream</h3>
-                <p class="icecream-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p><button></button></li>
-            <li class="products_item icecream-card ">
+                <div class="icecream-card--wrap icecream-card--pink">
+                    <h3 class="icecream-card_header">ice cream</h3>
+                    <p class="icecream-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
+                    <button class="icecream-card_btn btn"> 
+                        <svg width="15" height="15">
+                            <use href="./sprite/sprite.svg#icon-ellipse-instead"></use>
+                        </svg>
+                    </button>
+                </div>
+            </li>
+            <li class="products_item icecream-card  ">
                 <picture>
                     <source srcset=" ./image/product/coffee-desktop.png 1x, ./image/product/coffee-desktop@2x.png 2x " media=" (min-width:1200px)">
                     <source srcset=" ./image/product/coffee-tablet.png 1x, ./image/product/coffee-tablet@2x.png 2x" media="(min-width:768px)">
@@ -25,8 +33,13 @@
                     <source srcset="./image/product/coffee-mobile.webp 1x, ./image/product/coffee-mobile@2x.webp 2x" type="image/webp" media=" (min-width:320px)">
                     <img class="products_img" src="./image/product/coffee-mobile.png " alt="coffee icecream ">
                 </picture>
-                <h3 class="icecream-card_header">ice coffee</h3>
-                <p class="icecream-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p><button></button></li>
+                <div class="icecream-card--wrap icecream-card--brown">
+                    <h3 class="icecream-card_header">ice coffee</h3>
+                    <p class="icecream-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
+                    <button class="icecream-card_btn btn"></button>
+                </div>
+
+            </li>
             <li class="products_item icecream-card ">
                 <picture>
                     <source srcset=" ./image/product/shakes-desktop.png 1x, ./image/product/shakes-desktop@2x.png 2x " media=" (min-width:1200px)">
@@ -37,8 +50,12 @@
                     <source srcset="./image/product/shakes-mobile.webp 1x, ./image/product/shakes-mobile@2x.webp 2x" type="image/webp" media=" (min-width:320px)">
                     <img class="products_img" src="./image/product/shakes-mobile.png " alt="chocolate icecream ">
                 </picture>
-                <h3 class="icecream-card_header">milkshakes</h3>
-                <p class="icecream-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p><button></button></li>
+                <div class="icecream-card--wrap icecream-card--green ">
+                    <h3 class="icecream-card_header">milkshakes</h3>
+                    <p class="icecream-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.</p>
+                    <button class="icecream-card_btn btn"></button>
+                </div>
+            </li>
         </ul>
     </div>
 </section>
