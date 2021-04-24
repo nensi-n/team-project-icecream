@@ -6,6 +6,7 @@
 .header .container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -153,3 +154,9 @@
 //   background-color: #ffa5ba;
 //   overflow: clip;
 // }
+
+.hero__main-img {
+  position: absolute;
+  bottom: 0;
+  left: 117px;
+}
