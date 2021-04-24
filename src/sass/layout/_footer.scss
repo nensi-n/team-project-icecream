@@ -13,6 +13,7 @@
   }
 
   &__main-desc {
+    display: block;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     color: var(--color-pink-dark);
@@ -23,6 +24,7 @@
   }
 
   &__second-desc {
+    display: block;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     color: var(--color-pink-accent);
@@ -32,12 +34,17 @@
     max-width: 200 px;
   }
 
-  &__list-icons-item {
+  &__list-icons {
     display: flex;
+    margin-bottom: 43px;
   }
 
   &__list-icons-item:not(:last-child) {
     margin-right: 28px;
+  }
+
+  &__contact {
+    max-width: 230px;
   }
 
   &__contact-desc {
