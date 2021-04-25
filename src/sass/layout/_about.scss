@@ -35,57 +35,46 @@
 
     &__label {
       font-family: var(--secondary-font);
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1.16;
+      @include font(400, 18px, 20px);
       text-align: center;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--color-pink-darker-pink);
       margin-bottom: 15px;
       @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 1.15;
+        @include font(400, 26px, 30px);
       }
       @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: 1.13;
+        @include font(400, 30px, 34px);
       }
     }
 
     &__headline {
       font-family: var(--secondary-font);
-      font-weight: 400;
-      font-size: 34px;
-      line-height: 1.14;
+      @include font(400, 34px, 39px);
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--color-pink-accent);
 
       @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: 1.15;
+        @include font(400, 48px, 55px);
       }
       @media screen and (min-width: 1200px) {
-        font-size: 58px;
-        line-height: 1.13;
+        @include font(400, 58px, 66px);
       }
     }
   }
 
   &-description {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.58;
+    @include font(500, 12px, 19px);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media screen and (min-width: 768px) {
+      @include font(500, 14px, 25px);
       letter-spacing: 0.04em;
-      font-size: 14px;
-      line-height: 1.7;
       flex-direction: row;
       align-items: flex-start;
     }
@@ -123,8 +112,7 @@
         width: 340px;
       }
       @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 1.75;
+        @include font(500, 16px, 28px);
         width: 463px;
       }
     }
@@ -138,15 +126,14 @@
         width: 340px;
       }
       @media screen and (min-width: 1200px) {
+        @include font(500, 14px, 27px);
         margin-bottom: 45px;
-        line-height: 1.9;
         width: 463px;
       }
     }
 
     &__btn {
-      font-size: 14px;
-      line-height: 1.2;
+      @include font(700, 14px, 21px);
       vertical-align: sub;
       @media screen and (min-width: 768px) {
         font-size: 16px;
