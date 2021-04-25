@@ -307,6 +307,7 @@
     margin-left: calc(-1 * 30px);
     margin-bottom: 86px;
     &__list {
+      max-width: 330px;
       padding-top: 51px;
       padding-bottom: 62px;
       padding-left: 43px;
@@ -332,55 +333,32 @@
       }
       &-item-head {
         @include font(500, 16px, 30px);
-        margin-bottom: 10px;
       }
       &-item-head-item {
-        @include font(500, 14px, 23px);
+        @include font(500, 16px, 29px);
       }
       &-item-day-container {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
       }
       &-item-day {
-        @include font(500, 14px, 26px);
+        @include font(500, 16px, 30px);
       }
       &-item-day-item {
-        @include font(500, 14px, 26px);
+        @include font(500, 16px, 30px);
       }
       &-item-tellink {
-        @include font(500, 14px, 26px);
+        @include font(500, 16px, 29px);
       }
-    }
-  }
-  .button-locations__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button-locations__class {
-    &:nth-child(1) {
-      margin-bottom: 0px;
-      margin-right: 15px;
     }
   }
 
   .button-locations {
-    padding-left: 30px;
-    padding-right: 30px;
-    &-pink {
-      width: 5px;
-      height: 8px;
-      fill: var(--color-white);
-    }
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   .button-franchise {
-    padding-left: 30px;
-    padding-right: 30px;
-    &-pink {
-      width: 5px;
-      height: 8px;
-      fill: var(--color-pink-accent);
-    }
+    padding-left: 37px;
+    padding-right: 37px;
   }
 }
