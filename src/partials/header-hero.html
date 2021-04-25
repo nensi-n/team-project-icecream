@@ -1,4 +1,3 @@
-
 <header class="header">
     <div class="container">
 
@@ -45,7 +44,7 @@
                 <use href="./sprite/sprite.svg#icon-burger"></use>
             </svg>
         </button>
-        <button type="button" class="btn header-btn">Buy now
+        <button type="button" class="btn header-btn animate__animated animate__rubberBand">Buy now
             <svg height="8" width="4">
                 <use href="./sprite/sprite.svg#icon-vector-btn-pink"></use>
             </svg>
@@ -55,7 +54,7 @@
 </header>
 <section class="hero">
     <div class="container">
-        <span class="circle"></span>
+        <span class="circle animate__animated animate__flip"></span>
         <picture>
             <source srcset="./image/hero-header/icecream-desktop.webp 1x, ./image/hero-header/icecream-desktop@2x.webp 2x"
                 media="(min-width: 1200px)" type="image/webp">
@@ -69,7 +68,7 @@
                 media="(max-width: 768px)" type="image/webp">
             <source srcset="./image/hero-header/icecream-mobile.png 1x, ./image/hero-header/icecream-mobile@2x.png 2x"
                 media="(max-width: 768px)">
-            <img class="hero__main-img" src="./image/hero-header/icecream-mobile.png" alt="Icecream">
+            <img class="hero__main-img animate__animated animate__flipInY" src="./image/hero-header/icecream-mobile.png" alt="Icecream">
         </picture>
         <picture>
             <source srcset="./image/hero-header/milk-desktop.webp 1x, ./image/hero-header/milk-desktop@2x.webp 2x"
@@ -80,7 +79,7 @@
                 media="(min-width: 768px)" type="image/webp">
             <source srcset="./image/hero-header/milk-tablet.png 1x, ./image/hero-header/milk-tablet@2x.png 2x"
                 media="(min-width: 768px)">
-            <img class="hero__milk-img" src="./image/hero-header/milk-tablet.png" alt="jug of milk">
+            <img class="hero__milk-img animate__animated animate__fadeInLeft src="./image/hero-header/milk-tablet.png" alt="jug of milk">
         </picture>
         <picture>
             <source srcset="./image/hero-header/girl-desktop.webp 1x, ./image/hero-header/girl-desktop@2x.webp 2x"
@@ -91,16 +90,16 @@
                 media="(min-width: 768px)" type="image/webp">
             <source srcset="./image/hero-header/girl-tablet.png 1x, ./image/hero-header/girl-tablet@2x.png 2x"
                 media="(min-width: 768px)">
-            <img class="hero__girl-img" src="./image/hero-header/girl-tablet.png" alt="smiling girl with icecream">
+            <img class="hero__girl-img animate__animated animate__fadeInRight" src="./image/hero-header/girl-tablet.png" alt="smiling girl with icecream">
         </picture>
         <p class="hero-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         </p>
-        <span class="hero-arrow__circe">
+        <a class="hero-arrow__circe" href="#">
             <svg class="hero-arrow__arrow" width="5px" height="5px" >
                 <use href="./sprite/sprite.svg#icon-arrow-forward"></use>
             </svg>
-        </span>
+        </a>
         <ul class="hero-counter__list list">
             <li class="hero-counter__item">
                                   <div class="hero-counter__wrapper">
@@ -122,8 +121,8 @@
         </ul>
         <h1 class="main-title">ice cream made with <span class="main-title--colored">passion</span></h1>
         <ul class="list hero__btn-list">
-            <li class="hero__btn-item"><a class="btn btn-colored link" href="#">Products</a></li>
-            <li class="hero__btn-item"><a class="btn link" href="#">How it’s made?</a></li>
+            <li class="hero__btn-item"><a class="btn btn-colored link" href="#products">Products</a></li>
+            <li class="hero__btn-item"><a class="btn link" href="#about">How it’s made?</a></li>
         </ul>
     </div> 
     
@@ -136,8 +135,8 @@
     </button>
     <div class="container">
         <button class="btn" type="button">
-            <span class="tuch-menu-btn__wrapper">
-            <span class="tuch-menu-btn__text-btn-wrapper">Buy now</span>
+            <span class="touch-menu-btn__wrapper">
+            <span class="touch-menu-btn__text-btn-wrapper">Buy now</span>
                     <svg height="8" width="4">
                 <use href="./sprite/sprite.svg#icon-vector-btn-pink"></use>
             </svg>
