@@ -27,81 +27,72 @@
   &:nth-child(2) {
     margin-bottom: 20px;
   }
-}
-
-.contact-container__heading-cafe {
-  display: inline-block;
-  font-family: var(--main-font);
-  @include font(500, 12px, 22px);
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: var(--color-yellow);
-  border-radius: 4px;
-  margin-top: 43px;
-  margin-bottom: 25px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.contact-container__heading-foodtruck {
-  display: inline-block;
-  font-family: var(--main-font);
-  @include font(500, 12px, 22px);
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: var(--color-green);
-  border-radius: 4px;
-  margin-top: 43px;
-  margin-bottom: 25px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.contact-container__list-item:not(:last-child) {
-  display: block;
-  border-bottom: 1px solid var(--color-gray-border);
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-}
-
-.contact-container__list-item-head {
-  display: block;
-  font-family: var(--main-font);
-  @include font(500, 12px, 22px);
-  letter-spacing: 0.04em;
-  margin-bottom: 10px;
-}
-
-.contact-container__list-item-head-item {
-  font-family: var(--main-font);
-  @include font(500, 12px, 18px);
-  color: var(--color-subtext);
-}
-
-.contact-container__list-item-day-container {
-  margin-bottom: 10px;
-}
-
-.contact-container__list-item-day {
-  font-family: var(--main-font);
-  @include font(500, 12px, 22px);
-}
-
-.contact-container__list-item-day-item {
-  font-family: var(--main-font);
-  @include font(500, 12px, 22px);
-  color: var(--color-pink-dark);
-}
-
-.contact-container__list-item-tellink {
-  font-family: var(--main-font);
-  @include font(500, 12px, 18px);
-  color: var(--color-subtext);
-  font-style: normal;
+  &__heading-cafe {
+    display: inline-block;
+    font-family: var(--main-font);
+    @include font(500, 12px, 22px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--color-yellow);
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__heading-foodtruck {
+    display: inline-block;
+    font-family: var(--main-font);
+    @include font(500, 12px, 22px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--color-green);
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-bottom: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__list-item:not(:last-child) {
+    display: block;
+    border-bottom: 1px solid var(--color-gray-border);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+  &__list-item-head {
+    display: block;
+    font-family: var(--main-font);
+    @include font(500, 12px, 22px);
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+  &__list-item-head-item {
+    font-family: var(--main-font);
+    @include font(500, 12px, 18px);
+    color: var(--color-subtext);
+  }
+  &__list-item-day-container {
+    margin-bottom: 10px;
+  }
+  &__list-item-day {
+    font-family: var(--main-font);
+    @include font(500, 12px, 22px);
+  }
+  &__list-item-day-item {
+    font-family: var(--main-font);
+    @include font(500, 12px, 22px);
+    color: var(--color-pink-dark);
+  }
+  &__list-item-tellink {
+    font-family: var(--main-font);
+    @include font(500, 12px, 18px);
+    color: var(--color-subtext);
+    font-style: normal;
+  }
 }
 
 .button-section {
@@ -133,12 +124,11 @@
   border-width: 0px;
   cursor: pointer;
   margin: 0px auto;
-}
-
-.button-locations-pink {
-  width: 4px;
-  height: 8px;
-  fill: var(--color-white);
+  &-pink {
+    width: 4px;
+    height: 8px;
+    fill: var(--color-white);
+  }
 }
 
 .button-franchise {
@@ -157,10 +147,9 @@
   border-width: 0px;
   cursor: pointer;
   margin: 0px auto;
-}
-
-.button-franchise-pink {
-  width: 4px;
-  height: 8px;
-  fill: var(--color-white);
+  &-pink {
+    width: 4px;
+    height: 8px;
+    fill: var(--color-white);
+  }
 }
