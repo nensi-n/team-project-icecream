@@ -1,8 +1,12 @@
 .contact {
-  padding-top: 86px;
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  padding-top: 43px;
+  padding-bottom: 56px;
+  background-image: linear-gradient(
+    to top,
+    var(--color-pink-light) 5%,
+    var(--color-pink-light) 92%,
+    var(--color-white) 92%
+  );
 }
 
 .contact-container {
@@ -14,11 +18,19 @@
   padding-bottom: 43px;
   padding-left: 20px;
   padding-right: 20px;
+  &:nth-last-child(2) {
+    margin-bottom: 54px;
+  }
+  &:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  &:nth-child(2) {
+    margin-bottom: 20px;
+  }
 }
 
-.contact-container__heading {
+.contact-container__heading-cafe {
   display: inline-block;
-  width: 80px;
   font-family: var(--main-font);
   @include font(500, 12px, 22px);
   text-align: center;
@@ -29,6 +41,24 @@
   border-radius: 4px;
   margin-top: 43px;
   margin-bottom: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.contact-container__heading-foodtruck {
+  display: inline-block;
+  font-family: var(--main-font);
+  @include font(500, 12px, 22px);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--color-green);
+  border-radius: 4px;
+  margin-top: 43px;
+  margin-bottom: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .contact-container__list-item:not(:last-child) {
@@ -72,4 +102,65 @@
   @include font(500, 12px, 18px);
   color: var(--color-subtext);
   font-style: normal;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-locations__class {
+  &:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+.button-locations {
+  font-family: var(--main-font);
+  @include font(700, 16px, 21px);
+  color: var(--color-white);
+  background: var(--color-pink-accent);
+  border-radius: 22px;
+  text-align: center;
+  justify-content: center;
+  min-width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border-width: 0px;
+  cursor: pointer;
+  margin: 0px auto;
+}
+
+.button-locations-pink {
+  width: 4px;
+  height: 8px;
+  fill: var(--color-white);
+}
+
+.button-franchise {
+  font-family: var(--main-font);
+  @include font(700, 16px, 21px);
+  color: var(--color-pink-accent);
+  background: var(--color-white);
+  border-radius: 22px;
+  text-align: center;
+  justify-content: center;
+  min-width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border-width: 0px;
+  cursor: pointer;
+  margin: 0px auto;
+}
+
+.button-franchise-pink {
+  width: 4px;
+  height: 8px;
+  fill: var(--color-white);
 }
