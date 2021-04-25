@@ -91,7 +91,7 @@
       }
       @media screen and (min-width: 1200px) {
         margin-top: 55px;
-        margin-left: 74px;
+        margin-left: 10px;
       }
     }
 
@@ -108,12 +108,12 @@
       color: var(--color-black);
 
       @media screen and (min-width: 768px) {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
         width: 340px;
       }
       @media screen and (min-width: 1200px) {
-        @include font(500, 16px, 28px);
-        width: 463px;
+        @include font(500, 15px, 28px);
+        width: 455px;
       }
     }
 
@@ -126,9 +126,9 @@
         width: 340px;
       }
       @media screen and (min-width: 1200px) {
-        @include font(500, 14px, 27px);
-        margin-bottom: 45px;
-        width: 463px;
+        @include font(500, 13px, 27px);
+        margin-bottom: 40px;
+        width: 455px;
       }
     }
 
