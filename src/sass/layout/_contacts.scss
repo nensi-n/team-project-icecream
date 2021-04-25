@@ -19,13 +19,13 @@
   padding-bottom: 43px;
   padding-left: 20px;
   padding-right: 20px;
-  &:nth-last-child(2) {
+  &:nth-last-child(1) {
     margin-bottom: 54px;
   }
-  &:nth-child(2) {
+  &:nth-child(1) {
     margin-bottom: 20px;
   }
-  &:nth-child(3) {
+  &:nth-child(2) {
     margin-bottom: 20px;
   }
   &-item:nth-child(2) {
@@ -68,7 +68,6 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-
   &-item-head {
     display: block;
     font-family: var(--main-font);
@@ -102,7 +101,7 @@
   }
 }
 
-.button-locations__container {
+.button-locations__list {
   text-align: center;
 }
 
@@ -164,23 +163,28 @@
     padding-bottom: 79px;
     background-image: linear-gradient(
       to top,
-      var(--color-pink-light) 5%,
-      var(--color-pink-light) 92%,
-      var(--color-white) 92%
+      var(--color-pink-light) 17%,
+      var(--color-pink-light) 83%,
+      var(--color-white) 83%
     );
   }
-
-  .contact-container__list {
+  .contact-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: none;
+    margin-top: calc(-1 * 20px);
+    margin-left: calc(-1 * 20px);
+    margin-bottom: 81px;
+  }
+  .contact-container__list {
+    display: block;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 31px;
     padding-right: 31px;
-    &:nth-last-child(2) {
-      margin-bottom: 81px;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-basis: calc(100% / 3 - 20px);
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
     }
     &:nth-child(1) {
       margin-bottom: 0px;
@@ -188,129 +192,195 @@
     &:nth-child(2) {
       margin-bottom: 0px;
     }
-    &__heading-cafe {
-      display: inline-block;
-      font-family: var(--main-font);
-      @include font(500, 12px, 22px);
-      text-align: center;
+    &-item {
+      &:nth-child(2) {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+      }
+    }
+
+    &-heading-cafe {
+      @include font(500, 16px, 30px);
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &-heading-foodtruck {
+      @include font(500, 16px, 30px);
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &-item-head {
+      @include font(500, 14px, 26px);
       letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: var(--color-yellow);
-      border-radius: 4px;
-      margin-bottom: 25px;
-      padding-left: 24px;
-      padding-right: 24px;
+      margin-bottom: 14px;
     }
-    &__heading-foodtruck {
-      display: inline-block;
-      font-family: var(--main-font);
-      @include font(500, 12px, 22px);
-      text-align: center;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: var(--color-green);
-      border-radius: 4px;
-      margin-bottom: 25px;
-      padding-left: 24px;
-      padding-right: 24px;
+    &-item-head-item {
+      @include font(500, 14px, 23px);
     }
-    &__list-item:not(:last-child) {
-      display: block;
-      border-bottom: 1px solid var(--color-gray-border);
-      margin-bottom: 25px;
-      padding-bottom: 25px;
+    &-item-day-container {
+      margin-bottom: 16px;
     }
-    &__list-item-head {
-      display: block;
-      font-family: var(--main-font);
-      @include font(500, 12px, 22px);
-      letter-spacing: 0.04em;
-      margin-bottom: 10px;
+    &-item-day {
+      @include font(500, 14px, 26px);
     }
-    &__list-item-head-item {
-      font-family: var(--main-font);
-      @include font(500, 12px, 18px);
-      color: var(--color-subtext);
+    &-item-day-item {
+      @include font(500, 14px, 26px);
     }
-    &__list-item-day-container {
-      margin-bottom: 10px;
-    }
-    &__list-item-day {
-      font-family: var(--main-font);
-      @include font(500, 12px, 22px);
-    }
-    &__list-item-day-item {
-      font-family: var(--main-font);
-      @include font(500, 12px, 22px);
-      color: var(--color-pink-dark);
-    }
-    &__list-item-tellink {
-      font-family: var(--main-font);
-      @include font(500, 12px, 18px);
-      color: var(--color-subtext);
-      font-style: normal;
+    &-item-tellink {
+      @include font(500, 14px, 26px);
     }
   }
 
-  .button-section {
-    flex-direction: row;
+  .button-locations__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .button-locations__class {
     &:nth-child(1) {
       margin-bottom: 0px;
-      margin-right: 10px;
+      margin-right: 15px;
     }
   }
 
   .button-locations {
-    font-family: var(--main-font);
-    @include font(700, 16px, 21px);
-    color: var(--color-white);
-    background: var(--color-pink-accent);
-    border-radius: 22px;
-    text-align: center;
-    justify-content: center;
-    min-width: 200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 21px;
-    padding-right: 21px;
-    border-width: 0px;
-    cursor: pointer;
-    margin: 0px auto;
+    padding-left: 30px;
+    padding-right: 30px;
     &-pink {
-      width: 4px;
+      width: 5px;
       height: 8px;
       fill: var(--color-white);
     }
   }
 
   .button-franchise {
-    font-family: var(--main-font);
-    @include font(700, 16px, 21px);
-    color: var(--color-pink-accent);
-    background: var(--color-white);
-    border-radius: 22px;
-    text-align: center;
-    justify-content: center;
-    min-width: 200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 21px;
-    padding-right: 21px;
-    border-width: 0px;
-    cursor: pointer;
-    margin: 0px auto;
+    padding-left: 30px;
+    padding-right: 30px;
     &-pink {
-      width: 4px;
+      width: 5px;
       height: 8px;
       fill: var(--color-pink-accent);
     }
   }
 }
+@media screen and(min-width: 1200px) {
+  .contact {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding-top: 66px;
+    padding-bottom: 82px;
+    background-image: linear-gradient(
+        to top,
+        var(--color-pink-light) 20%,
+        var(--color-pink-light) 80%,
+        var(--color-white) 80%
+      ),
+      url('../image/contacts/contacts-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          var(--color-pink-light) 20%,
+          var(--color-pink-light) 80%,
+          var(--color-white) 80%
+        ),
+        url('../image/contacts/contacts-bg@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
 
 @media screen and(min-width: 1200px) {
+  .contact-container {
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+    margin-bottom: 86px;
+    &__list {
+      padding-top: 51px;
+      padding-bottom: 62px;
+      padding-left: 43px;
+      padding-right: 43px;
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+      &-item {
+        &:nth-child(2) {
+          margin-bottom: 32px;
+          padding-bottom: 32px;
+        }
+        &:nth-child(3) {
+          margin-bottom: 32px;
+          padding-bottom: 32px;
+        }
+      }
+      &-heading-cafe {
+        margin-bottom: 32px;
+      }
+      &-heading-foodtruck {
+        margin-bottom: 32px;
+      }
+      &-item-head {
+        @include font(500, 16px, 30px);
+        margin-bottom: 10px;
+      }
+      &-item-head-item {
+        @include font(500, 14px, 23px);
+      }
+      &-item-day-container {
+        margin-bottom: 16px;
+      }
+      &-item-day {
+        @include font(500, 14px, 26px);
+      }
+      &-item-day-item {
+        @include font(500, 14px, 26px);
+      }
+      &-item-tellink {
+        @include font(500, 14px, 26px);
+      }
+    }
+  }
+  .button-locations__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-locations__class {
+    &:nth-child(1) {
+      margin-bottom: 0px;
+      margin-right: 15px;
+    }
+  }
+
+  .button-locations {
+    padding-left: 30px;
+    padding-right: 30px;
+    &-pink {
+      width: 5px;
+      height: 8px;
+      fill: var(--color-white);
+    }
+  }
+
+  .button-franchise {
+    padding-left: 30px;
+    padding-right: 30px;
+    &-pink {
+      width: 5px;
+      height: 8px;
+      fill: var(--color-pink-accent);
+    }
+  }
 }
