@@ -48,7 +48,7 @@
 }
 
 .main-title {
-  width: 202px;
+  width: 218px;
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 26px;
@@ -61,6 +61,7 @@
 
   @media screen and(min-width: 768px) {
     font-size: 22px;
+    width: 169px;
   }
 
   @media screen and(min-width: 1200px) {
