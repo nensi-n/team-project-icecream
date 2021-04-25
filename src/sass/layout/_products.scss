@@ -1,19 +1,19 @@
         .products {
-            padding-bottom: 120px;
+            padding-bottom: 100px;
             padding-top: 120px;
         }
         
         .sub-header-section {
-            padding-bottom: 15px;
+            margin-bottom: 15px;
         }
         
         .products_header {
-            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
         
         .products_img {
             margin: 0 auto;
-            padding-bottom: 20px;
+            margin-bottom: 20px;
             transform: translateY(150px);
         }
         
@@ -25,7 +25,7 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: var(--color-white);
-            padding-bottom: 30px;
+            margin-bottom: 60px;
             position: relative;
             display: flex;
             justify-content: center;
@@ -34,9 +34,10 @@
         .icecream-card_header::after {
             content: ". . .";
             position: absolute;
-            top: 30px;
+            top: 35px;
             text-align: center;
             font-weight: 900;
+            letter-spacing: 0.005rem;
         }
         
         .icecream-card_text {
@@ -46,8 +47,7 @@
             text-align: center;
             letter-spacing: 0.04em;
             color: var(--color-white);
-            padding-bottom: 30px;
-            padding-top: 30px;
+            margin-bottom: 30px;
         }
         
         .icecream-card {
@@ -84,12 +84,21 @@
         .icecream-card_btn {
             margin: 0 auto;
             fill: var(--color-pink-accent);
-            padding: 3px;
+            padding: unset;
             min-width: unset;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            display: block;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: fill 250ms linear, background-color 250ms linear;
+            &:hover,
+            &:focus {
+                background-color: var(--color-pink-accent);
+                cursor: pointer;
+                fill: var(--color-white);
+            }
         }
         
         @media screen and (min-width: "768px") {
@@ -98,7 +107,9 @@
             }
             .products_list {
                 display: flex;
-                justify-content: space-between;
+            }
+            .icecream-card_text {
+                line-height: 176%;
             }
             .icecream-card {
                 margin-top: -135px;
@@ -108,5 +119,55 @@
             }
             .products_img {
                 height: 230px;
+            }
+            .products {
+                padding-bottom: 110px;
+                padding-top: 120px;
+            }
+            .products_header {
+                margin-bottom: 40px;
+                font-size: 48px;
+            }
+            .icecream-card--wrap {
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 40px;
+            }
+            .sub-header-section {
+                font-size: 26px;
+            }
+        }
+        
+        @media screen and (min-width: "1200px") {
+            .icecream-card:not(:last-child) {
+                margin-right: 25px;
+            }
+            .products_img {
+                height: unset;
+            }
+            .products_header {
+                margin-bottom: 50px;
+                font-size: 58px;
+            }
+            .sub-header-section {
+                font-size: 30px;
+            }
+            .icecream-card--wrap {
+                padding-left: 45px;
+                padding-right: 45px;
+                padding-bottom: 50px;
+            }
+            .icecream-card_text {
+                font-size: 16px;
+                margin-bottom: 60px;
+            }
+            .icecream-card_header {
+                font-size: 30px;
+                margin-bottom: 72px;
+            }
+            .icecream-card_header::after {
+                font-size: 20px;
+                letter-spacing: 0.009rem;
+                top: 55px;
             }
         }
