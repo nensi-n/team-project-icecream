@@ -11,14 +11,14 @@
     padding-bottom: 310px;
   }
   &__components-icecream {
-    @media screen and (min-width: 1200px) {
-      margin-left: -30px;
-      margin-top: -30px;
-    }
     @media screen and (min-width: 768px) {
       display: flex;
       margin-left: -60px;
       margin-top: -60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: -30px;
+      margin-top: -30px;
     }
   }
   &__item {
@@ -28,27 +28,20 @@
     @media screen and (min-width: 230px) {
       width: 230px;
     }
-    @media screen and (min-width: 320px) {
-      margin-right: auto;
-      margin-left: auto;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 330px;
-      flex-basis: calc(100% / 3 - 115px);
-      margin-left: 30px;
-      margin-top: 30px;
-    }
     @media screen and (min-width: 768px) {
       width: 180px;
-      flex-basis: calc(100% / 3 - 36px);
+      flex-basis: calc(100% / 3 - 76px);
       margin-left: 60px;
       margin-top: 60px;
-      // margin-right: unset;
-      // margin-left: unset;
       &:not(:last-child) {
-        // margin-right: 60px;
         margin-bottom: unset;
       }
+    }
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+      flex-basis: calc(100% / 3);
+      margin-left: 30px;
+      margin-top: 30px;
     }
   }
   &__img {
@@ -79,6 +72,7 @@
     }
   }
   &__description {
+    max-width: 100%;
     @include font(700, 12px, 20.4px);
     letter-spacing: 0em;
     text-align: left;
