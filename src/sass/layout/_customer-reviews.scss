@@ -1,0 +1,238 @@
+.customer-reviews {
+  background-color: var(--color-white);
+  padding-top: 154px;
+  padding-bottom: 170px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    padding-top: 279px;
+    padding-bottom: 197px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    padding-top: 382px;
+    padding-bottom: 234px;
+  }
+}
+
+.customer-reviews__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px 177px;
+  }
+}
+
+.customer-reviews__img {
+  align-items: center;
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
+}
+
+.customer-reviews__text-wrapper {
+  width: 280px;
+  height: 308px;
+  background: #fafafa;
+  align-items: center;
+  padding-top: 43px;
+  padding-left: 57px;
+  padding-right: 66px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 164px;
+    padding-top: 47px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 34px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 926px;
+    height: 138px;
+    padding-top: 47px;
+    padding-left: 88px;
+    padding-right: 88px;
+    padding-bottom: 39px;
+    margin-bottom: 15px;
+  }
+}
+
+.customer-reviews__description {
+  width: 157px;
+  height: 239px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: var(--color-black);
+  background-image: repeating-linear-gradient(
+    rgba(100%, 100%, 100%, 0%) 0px,
+    rgba(100%, 100%, 100%, 0%) 28px,
+    #e1e1e1 28px,
+    #e1e1e1 29px
+  );
+
+  @media screen and (min-width: 768px) {
+    width: 460px;
+    height: 84px;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(
+      rgba(100%, 100%, 100%, 0%) 0px,
+      rgba(100%, 100%, 100%, 0%) 27px,
+      #e1e1e1 27px,
+      #e1e1e1 28px
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(
+      rgba(100%, 100%, 100%, 0%) 0px,
+      rgba(100%, 100%, 100%, 0%) 25px,
+      #e1e1e1 25px,
+      #e1e1e1 26px
+    );
+  }
+}
+
+.customer-reviews__description::before {
+  content: '';
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  padding-left: 4px;
+  padding-top: 15px;
+  background-color: #e1e1e1;
+  background-image: url(../image/customer-reviews/1.png);
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 17px;
+    background-color: #e1e1e1;
+    background-image: url(../image/customer-reviews/1.png);
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 1200px) {
+    content: '';
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    padding-left: 37px;
+    padding-top: 15px;
+    background-color: #e1e1e1;
+    background-image: url(../image/customer-reviews/1.png);
+    padding: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+.customer-reviews__info {
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--color-black);
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.86;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    content: '...';
+    margin: 0 auto;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    color: var(--color-pink-accent);
+    padding-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+      content: '...';
+      margin: 0 auto;
+      margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      content: '...';
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+
+  &::after {
+    content: '...';
+    margin: 0 auto;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    color: var(--color-pink-accent);
+
+    @media screen and (min-width: 768px) {
+      content: '...';
+    }
+
+    @media screen and (min-width: 1200px) {
+      content: '...';
+    }
+  }
+
+  &::after:not(:last-child) {
+    margin-right: 18px;
+  }
+}
