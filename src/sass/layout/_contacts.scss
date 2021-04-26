@@ -273,16 +273,15 @@
 @media screen and(min-width: 1200px) {
   .contact {
     margin: 0 auto;
-    max-width: 1600px;
     padding-top: 66px;
     padding-bottom: 82px;
-    background-image: linear-gradient(
+    background-image: url('../image/contacts/contacts-bg.png'),
+      linear-gradient(
         to top,
         var(--color-pink-light) 20%,
         var(--color-pink-light) 80%,
         var(--color-white) 80%
-      ),
-      url('../image/contacts/contacts-bg.png');
+      );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
