@@ -12,7 +12,7 @@
   border: 0;
   border-radius: 22px;
   padding: 12px 37px;
-  transition: background-color 250ms var(--time-function);
+  transition: background-color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -23,6 +23,7 @@
   &-colored {
     background-color: #d41342;
     color: #ffffff;
+    transition: background-color 250ms var(--timing-function);
 
     &:hover,
     &:focus {
