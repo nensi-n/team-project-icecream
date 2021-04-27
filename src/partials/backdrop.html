@@ -1,0 +1,31 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <form class="modal-form" action="#">
+            <p class="modal-form-name">Hey! We are happy with your choice of our delicious and natural ice cream.</p>
+            <label class="modal-form_label" for="name">How many kilograms do you need?</label>
+            <div class="modal-form_input-wrapper">
+                <input class="modal-form_input" type="number" min="10" max="100" step="10" id="name" name="name" required>
+                            </div>
+            <label class="modal-form_label" for="phone">Your phone</label>
+            <div class="modal-form_phone-wrapper modal-form_input-wrapper">
+                <input class="modal-form_input" type="text" id="phone" name="phone" required
+                    pattern="[+]3[0-9]{4}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="+3XXXX-XXX-XX-XX">
+                
+            </div>
+            <label class="modal-form_label" for="post">Address</label>
+            <div class="modal-form_post-wrapper modal-form_input-wrapper">
+                <input class="modal-form_input" type="text" id="post" name="post">
+            </div>
+            <div class="modal-checkbox_line">
+                <input class="pay-checkbox" type="checkbox" name="pay" id="pay">
+                <label class="acceptanse" for="pay">Do you want to pay?</label>
+            </div>
+            <button class="btn" type="submit">Send</button>
+        </form>
+        <button type="button" data-modal-close class="close_modal-btn_button">
+            <svg class="close-icon" height="14" width="14">
+                <use href="./sprite/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
