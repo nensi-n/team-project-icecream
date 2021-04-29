@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../image/about/milkbg-mobile.png":[["milkbg-mobile.4885269c.png","ZvQh"],"ZvQh"],"./../image/about/milkbg-mobile@2x.png":[["milkbg-mobile@2x.8c339692.png","raV6"],"raV6"],"./../image/about/milkbg-desktop.png":[["milkbg-desktop.1f5b13e4.png","suzQ"],"suzQ"],"./../image/about/milkbg-desktop@2x.png":[["milkbg-desktop@2x.25d063ce.png","eKqq"],"eKqq"],"./../image/contacts/contacts-bg.png":[["contacts-bg.6fd30241.png","CYl2"],"CYl2"],"./../image/contacts/contacts-bg@2x.png":[["contacts-bg@2x.1143ba83.png","kIOv"],"kIOv"],"/home/runner/work/team-project-icecream/team-project-icecream/src/image/customer-reviews/1.png":[["1.ff37e84f.png","b6aD"],"b6aD"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-icecream/src.fc3a3ae2.js.map
+//# sourceMappingURL=/team-project-icecream/src.6609fcfa.js.map
